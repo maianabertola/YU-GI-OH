@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
 import groupArtwork from "../assets/yu-gi-oh-group-i32848.jpeg";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Question from "./Question";
+import QuestionName from "../pages/QuestionName";
+import QuestionAttribute from "../pages/QuestionAttribute";
+import QuestionAttack from "../pages/QuestionAttack";
+import QuestionDefense from "../pages/QuestionDefense";
+import QuestionDescription from "../pages/QuestionDescription";
 
 function Form() {
   const [name, setName] = useState("");
@@ -11,6 +15,8 @@ function Form() {
   const [attack, setAttack] = useState(0);
   const [defense, setDefense] = useState(0);
   const [description, setDescription] = useState("");
+
+  function handleName() {}
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -31,7 +37,11 @@ function Form() {
     <>
       <div className="formContainer">
         <div className="imageContainer">
-          <img src={groupArtwork} alt="yumi and friends"></img>
+          <img
+            src={groupArtwork}
+            alt="yumi and friends"
+            className="imgForm"
+          ></img>
         </div>
 
         <div className="textFormContainer">
@@ -43,11 +53,11 @@ function Form() {
           <button>Create my card</button>
         </div>
       </div>
-      <Question name={name} setName={setName} />
-      <Question attribute={attribute} setAttribute={setAttribute} />
-      <Question attack={attack} setAttack={setAttack} />
-      <Question defense={defense} setDefense={setDefense} />
-      <Question
+      <QuestionName name={name} setName={setName} handleName={handleName} />
+      <QuestionAttribute attribute={attribute} setAttribute={setAttribute} />
+      <QuestionAttack attack={attack} setAttack={setAttack} />
+      <QuestionDefense defense={defense} setDefense={setDefense} />
+      <QuestionDescription
         description={description}
         setDescription={setDescription}
         handleSubmit={handleSubmit}
