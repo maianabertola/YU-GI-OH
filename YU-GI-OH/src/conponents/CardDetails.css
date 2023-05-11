@@ -1,0 +1,62 @@
+.cardDetailsContainer {
+  background-color: rgba(25, 25, 25, 0.85);
+  width: 90%;
+  height: 16.5rem;
+  display: flex;
+  flex: row;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  justify-content: space-evenly;
+}
+
+.imgContainer {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.infoContainer {
+  width: 45%;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.infoContainer h1 {
+  font-family: "DavidLibre-Medium";
+  font-size: 2rem;
+  text-align: right;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.item {
+  margin: 0.5rem 0.2rem;
+  background-color: hsla(0, 1%, 67%, 0.505);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: "DavidLibre-Medium";
+}
+
+.item article {
+  text-align: right;
+}
