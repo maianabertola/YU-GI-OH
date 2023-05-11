@@ -20,6 +20,7 @@ import Callout from "./conponents/Callout";
 import CardDetails from "./conponents/CardDetails";
 import Form from "./conponents/Form";
 import Question from "./conponents/Question";
+import About from "./pages/About";
 
 
 function App() {
@@ -32,20 +33,6 @@ function App() {
         <Route path="/Create" element={<Create />} />
         <Route path="/About" element={<About />} />
       </Routes>
-
-      {/* <Header />
-      <Description_Page />
-      <Should_you_buy />
-      <Footer />       */}
-
-      {/* <Header /> */}
-      {/* <CardDetails></CardDetails> */}
-      {/* <Form></Form> */}
-      <Question></Question>
-      {/* <Callout></Callout>
-      <Should_you_buy />
-      <Footer /> */}
-
     </>
   );
 }

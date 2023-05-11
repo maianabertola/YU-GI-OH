@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:  rgb(25, 25, 25, 85%);;
+    background-color:  rgb(25, 25, 25, 85%);
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .Should_you_buy h1 {
@@ -17,9 +19,9 @@
     flex-direction: column;
     align-items: center;
     color: rgb(250, 250, 250, 100%);
-    width: 200px; 
-    height: 150px; 
-    border-radius: 100px; 
+    width: 300px; 
+    height: 250px; 
+    border-radius: 200px; 
     background-color: rgb(22, 55, 241);
     padding-top: 3rem;
     font-size: 170%;
@@ -40,17 +42,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px; 
-    height: 150px; 
-    border-radius: 100px; 
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
     background-color: rgb(241, 22, 193);
-    margin-left: 3rem;
-    margin-top: -6rem;
+    margin-left: 5rem;
+    margin-top: -8rem;
     justify-content: center;
 }
 
 .prices > div {
-    margin-right: 3rem;
+    margin-right: 5rem;
     background-color: rgba(22, 241, 44, 1);
 }
 
