@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(25, 25, 25, 85%);
+    height: 10rem;
+    align-items: center;
+}
+
+
+.text_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.strong_footer {
+    margin-bottom: 1rem;
+    font-size: larger;
+    color: rgb(180, 40, 36);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(217, 217, 217, 100%);
+}
+
+.text_footer p {
+    font-size: small;
+    color: rgb(217, 217, 217, 100%);
+}
