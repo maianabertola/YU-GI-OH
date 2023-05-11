@@ -1,0 +1,63 @@
+.Should_you_buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  rgb(25, 25, 25, 85%);;
+}
+
+.Should_you_buy h1 {
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    color: rgb(152, 155, 157, 85%);
+    font-size: 300%;
+}
+
+.rare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(250, 250, 250, 100%);
+    width: 200px; 
+    height: 150px; 
+    border-radius: 100px; 
+    background-color: rgb(22, 55, 241);
+    padding-top: 3rem;
+    font-size: 170%;
+}
+
+.rare p {
+    font-size: 70%;
+}
+
+
+.prices {
+    display: flex;
+    margin-bottom: 5rem;
+    color: rgb(250, 250, 250, 100%);
+}
+
+.prices div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; 
+    height: 150px; 
+    border-radius: 100px; 
+    background-color: rgb(241, 22, 193);
+    margin-left: 3rem;
+    margin-top: -6rem;
+    justify-content: center;
+}
+
+.prices > div {
+    margin-right: 3rem;
+    background-color: rgba(22, 241, 44, 1);
+}
+
+.Should_you_buy button {
+    background-color: rgb(180, 40, 36);
+    color: rgb(255, 255, 255);
+    padding: 1rem 5rem 1rem 5rem;
+    margin-bottom: 3rem;
+    font-size: 100%;
+}
