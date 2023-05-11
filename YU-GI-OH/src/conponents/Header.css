@@ -21,7 +21,7 @@ header {
 .header_body {
     display: flex;
     height: 35rem;
-    background-image: url(../assets/slider.png);
+    background-image: url(../../public/assets/slider.png);
     background-repeat: no-repeat;
     align-items: center;
     padding-bottom: 20rem;

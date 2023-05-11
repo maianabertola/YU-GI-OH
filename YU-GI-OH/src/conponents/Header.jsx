@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
       <header>
-        <img src="./assets/Logo.png" className='logo_menu'></img>
+        <img src="../../public/assets/Logo.png" className='logo_menu'></img>
         <div className="menu_header">
           <nav className='menu_button'>CARDS</nav>
           <nav className='menu_button'>CREATE YOUR CARDS</nav>
