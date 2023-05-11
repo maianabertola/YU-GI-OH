@@ -7,7 +7,7 @@ function Footer() {
     <>
         <footer>
           <div className='text_footer'>
-            <strong className='strong_footer'>Soial Media</strong>
+            <strong className='strong_footer'>Social Media</strong>
           </div>
           <div className='text_footer'>
             <strong className='strong_footer'>Find Your Card</strong>

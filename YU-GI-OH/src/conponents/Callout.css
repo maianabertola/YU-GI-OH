@@ -4,8 +4,8 @@
   position: relative;
   width: 90rem;
   height: 30rem;
-  left: 1px;
-  top: 936px;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
   background-color: hsl(285, 63%, 14%);
   box-shadow: inset 5px 8px 18px #c100ff;
   display: flex;
