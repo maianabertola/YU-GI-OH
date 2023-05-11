@@ -12,13 +12,6 @@ function Header() {
           <nav className='menu_button'>ABOUT YU-GI-OH</nav>
         </div>
       </header>
-        <div className='header_body'>
-          <div className='header_discover'>
-            <h1>welcome duelist</h1>
-            <p>its time to Du-du-duel!</p>
-            <button>Discover</button>
-          </div>
-        </div>
     </>
   )
 }
