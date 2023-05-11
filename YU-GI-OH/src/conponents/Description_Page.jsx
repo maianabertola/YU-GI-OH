@@ -62,6 +62,9 @@ function Description_Page() {
                 to 15 cards.
               </p>
             </div> 
+            <div>
+              
+            </div>
           </div>
         </div>
       </div>
