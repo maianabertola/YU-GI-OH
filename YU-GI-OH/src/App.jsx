@@ -9,7 +9,7 @@ import React from "react";
 import Home_Page from "./pages/Home_Page";
 import All_Cards from "./pages/All_Cards";
 import Create from "./pages/Create";
-
+import About from "./pages/About";
 
 import "./conponents/Header";
 import Header from "./conponents/Header";
@@ -21,11 +21,9 @@ import CardDetails from "./conponents/CardDetails";
 import Form from "./conponents/Form";
 import Question from "./conponents/Question";
 
-
 function App() {
   return (
     <>
-
       <Routes>
         <Route path="/" element={<Home_Page />} />
         <Route path="/All_Cards" element={<All_Cards />} />
@@ -45,7 +43,6 @@ function App() {
       {/* <Callout></Callout>
       <Should_you_buy />
       <Footer /> */}
-
     </>
   );
 }

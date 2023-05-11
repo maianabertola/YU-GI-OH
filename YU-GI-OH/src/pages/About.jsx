@@ -1,12 +1,12 @@
-import React from 'react'
-import Header from '../conponents/Header'
+import React from "react";
+import Header from "../conponents/Header";
 
 function About() {
   return (
     <>
-        <Header />
+      <Header />
     </>
-  )
+  );
 }
 
-export default About
+export default About;
