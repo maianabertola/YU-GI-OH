@@ -9,7 +9,7 @@ import React from "react";
 import Home_Page from "./pages/Home_Page";
 import All_Cards from "./pages/All_Cards";
 import Create from "./pages/Create";
-
+import About from "./pages/About";
 
 import "./conponents/Header";
 import Header from "./conponents/Header";
@@ -22,17 +22,16 @@ import Form from "./conponents/Form";
 import Question from "./conponents/Question";
 import About from "./pages/About";
 
-
 function App() {
   return (
     <>
-
       <Routes>
         <Route path="/" element={<Home_Page />} />
         <Route path="/All_Cards" element={<All_Cards />} />
         <Route path="/Create" element={<Create />} />
         <Route path="/About" element={<About />} />
       </Routes>
+
     </>
   );
 }
