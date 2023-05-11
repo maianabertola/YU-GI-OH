@@ -6,7 +6,7 @@ function CardDetails() {
   return (
     <div className="cardDetailsContainer">
       <div className="imgContainer">
-        <div className="cardShadow">
+        <div className="cardShgitadow">
           <img src={card} />
         </div>
       </div>

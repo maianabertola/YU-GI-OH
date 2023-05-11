@@ -22,7 +22,6 @@
 
 .infoContainer {
   width: 45%;
-  color: red;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

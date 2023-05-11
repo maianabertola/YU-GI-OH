@@ -5,12 +5,14 @@ import Footer from "./conponents/Footer";
 import Should_you_buy from "./conponents/Should_you_buy";
 import Callout from "./conponents/Callout";
 import CardDetails from "./conponents/CardDetails";
+import Form from "./conponents/Form";
 
 function App() {
   return (
     <>
       {/* <Header /> */}
-      <CardDetails></CardDetails>
+      {/* <CardDetails></CardDetails> */}
+      <Form></Form>
       {/* <Callout></Callout>
       <Should_you_buy />
       <Footer /> */}

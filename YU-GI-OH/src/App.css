@@ -45,3 +45,9 @@ p {
   color: whitesmoke;
   margin-bottom: 1rem;
 }
+
+article {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
