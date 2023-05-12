@@ -10,28 +10,39 @@ function QuestionName() {
     name: [name, setName, handleName],
   } = useOutletContext();
 
-  const navigate = useNavigate();
+  console.log("ICI", name);
   return (
     <>
-      <div className="formContainer">
-        <div className="imageContainer">
-          <img src={astroSorcerer} alt="astro sorcerer"></img>
-        </div>
+      <div>
+        <div className="formContainer">
+          <div className="imageContainer">
+            <img
+              src={astroSorcerer}
+              alt="astro sorcerer"
+              className="imgForm"
+            ></img>
+          </div>
 
-        <div className="textFormContainer">
-          <div className="inputContainer">
-            <label htmlFor="name">What's the name of your monster?</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-            />
-            {/* <Link className="link" to="race">
-              <Button onClick={handleName} cta={"Next"}></Button>
-            </Link> */}
-
-            <Button onClick={handleName} cta={"Next"}></Button>
+          <div className="textFormContainer">
+            <div className="inputContainer">
+              <label htmlFor="name">What's the name of your monster?</label>
+              <hr></hr>
+              <input
+                type="text"
+                id="name"
+                value={name}
+                // onInput={onInput}
+                onChange={(event) => setName(event.target.value)}
+              />
+              {name !== "" ? (
+                <Button onClick={handleName} cta={"Next"}></Button>
+              ) : (
+                <div className="">
+                  You can read this? Good. But please fullfil this form.
+                  P-L-E-A-S-E.
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

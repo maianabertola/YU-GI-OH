@@ -11,21 +11,32 @@ function QuestionRace() {
 
   return (
     <>
-      <div className="formContainer">
-        <div className="imageContainer">
-          <img src={dragonRed} alt="alt"></img>
-        </div>
+      <div className="bigContainer">
+        <div className="formContainer">
+          <div className="imageContainer">
+            <img src={dragonRed} alt="red dragon" className="imgForm"></img>
+          </div>
 
-        <div className="textFormContainer"></div>
-        <div className="inputContainer">
-          <label htmlFor="race">Choose its race</label>
-          <input
-            type="number"
-            id="race"
-            value={race}
-            onChange={(event) => setRace(event.target.value)}
-          />
-          <Button onClick={handleRace} cta={"Next"}></Button>
+          <div className="textFormContainer">
+            <div className="inputContainer">
+              <label htmlFor="name">Choose its race</label>
+              <hr></hr>
+              <input
+                type="text"
+                id="race"
+                value={race}
+                onChange={(event) => setRace(event.target.value)}
+              />
+              {race !== "" ? (
+                <Button onClick={handleRace} cta={"Next"}></Button>
+              ) : (
+                <div className="">
+                  You can read this? Good. But please fullfil this form.
+                  P-L-E-A-S-E.
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </>

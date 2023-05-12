@@ -12,13 +12,14 @@ import QuestionAttack from "./pages/QuestionAttack";
 import QuestionDefense from "./pages/QuestionDefense";
 import QuestionDescription from "./pages/QuestionDescription";
 import DescriptionCard from "./pages/DescriptionCard";
-import CardDetails from "./conponents/CardDetails"
+import CardDetails from "./conponents/CardDetails";
 import Oopsies from "./pages/Oopsies";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-    {/* <CardDetails /> */}
+      {/* <CardDetails /> */}
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home_Page />} />

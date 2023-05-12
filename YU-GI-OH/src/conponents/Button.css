@@ -1,11 +1,38 @@
 .button {
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   background-color: hsl(2, 67%, 42%);
   font-family: "Blinker-SemiBold";
   font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
   color: white;
+  border: 1px solid hsl(2, 67%, 42%);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  /* line-height: 16px;
+  min-height: 40px; */
+  outline: 0;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: white;
+}
+
+.button:active {
+  opacity: 0.5;
 }
 
 .link {
