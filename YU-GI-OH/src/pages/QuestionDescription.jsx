@@ -1,7 +1,13 @@
 import React from "react";
-import "../conponents/Form";
+import { useOutletContext } from "react-router-dom";
+import Button from "../conponents/Button";
+import "../conponents/Form.css";
 
-function QuestionDescription({ description, setDescription }) {
+function QuestionDescription() {
+  const {
+    description: [description, setDescription, handleSubmit],
+  } = useOutletContext();
+
   return (
     <>
       <div className="formContainer">
@@ -21,6 +27,7 @@ function QuestionDescription({ description, setDescription }) {
             onChange={(event) => setDescription(event.target.value)}
           />
         </div>
+        <Button onClick={handleSubmit} cta={"Create monster"}></Button>
       </div>
     </>
   );

@@ -1,10 +1,4 @@
 import "./App.css";
-
-// import Should_you_buy from "./conponents/Should_you_buy";
-// import Description_Page from "./conponents/Description_Page"
-// import CardDetails from "./conponents/CardDetails";
-// import Form from "./conponents/Form";
-import { Route, Routes } from "react-router-dom";
 import React from "react";
 import Home_Page from "./pages/Home_Page";
 import All_Cards from "./pages/All_Cards";
@@ -13,7 +7,7 @@ import Layout from "./conponents/Layout";
 import FormPage from "./pages/FormPage";
 import QuestionName from "./pages/QuestionName";
 import QuestionAttribute from "./pages/QuestionAttribute";
-import QuestionType from "./pages/QuestionType";
+import QuestionRace from "./pages/QuestionRace";
 import QuestionAttack from "./pages/QuestionAttack";
 import QuestionDefense from "./pages/QuestionDefense";
 import QuestionDescription from "./pages/QuestionDescription";
@@ -31,9 +25,9 @@ function App() {
           <Route path="/all-cards" element={<All_Cards />} />
           <Route path="/all-cards/:id" element={<DescriptionCard />} />
           <Route path="/create-card" element={<FormPage />}>
-            <Route path="name-card" element={<QuestionName />} />
-            <Route path="type" element={<QuestionType />} />
-            <Route path="attribute-card" element={<QuestionAttribute />} />
+            <Route path="name" element={<QuestionName />} />
+            <Route path="attribute" element={<QuestionAttribute />} />
+            <Route path="race" element={<QuestionRace />} />
             <Route path="attack" element={<QuestionAttack />} />
             <Route path="defense" element={<QuestionDefense />} />
             <Route path="description" element={<QuestionDescription />} />
