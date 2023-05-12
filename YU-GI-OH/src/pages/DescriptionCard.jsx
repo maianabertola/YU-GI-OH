@@ -29,6 +29,7 @@ function DescriptionCard() {
     console.log(card);
     // if({card.type} === "Effect Monster")
   return (
+    <>
     <div key={param.id} className="cardDes">
         <div>
           <img src={card.card_images[0].image_url}></img>
@@ -57,6 +58,24 @@ function DescriptionCard() {
             </div>
         </div>
     </div>
+    <div className='price'>
+        <div className='rarity'>
+            <h2>ultra rare</h2>
+            <p>rarity</p>
+        </div>
+        <div className='cost'>
+            <div>
+                <h2>number</h2>
+                <p>ebay prices</p>
+            </div>
+            <div>
+                <h2>number</h2>
+                <p>amazon prices</p>
+            </div>
+        </div>
+        <p className='fin'>Duel your way to victory, and let the heart of the cards guide you.</p>
+    </div>
+    </>
   );
 }
 

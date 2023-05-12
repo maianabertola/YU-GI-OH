@@ -12,9 +12,12 @@ import QuestionAttack from "./pages/QuestionAttack";
 import QuestionDefense from "./pages/QuestionDefense";
 import QuestionDescription from "./pages/QuestionDescription";
 import DescriptionCard from "./pages/DescriptionCard";
+
+import Oopsies from "./pages/Oopsies";
+import { Route, Routes } from "react-router-dom"
 import CardDetails from "./conponents/CardDetails";
 import Oopsies from "./pages/Oopsies";
-import { Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
