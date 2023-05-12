@@ -1,9 +1,6 @@
 import React from "react";
 import Header_Bottom from "../conponents/Header_Bottom";
 import Callout from "../conponents/Callout";
-import Footer from "../conponents/Footer";
-import img_encart1 from "../assets/Img_encart1.jpeg";
-import blueDragon from "../assets/blue-eyes-ultimate-dragon-anime-dragon-trading-card-games-yu-gi-oh-hd-wallpaper-preview.jpeg";
 import magicienne from "../assets/magicienne.png";
 import duel from "../assets/duel.jpeg";
 import bestMonsters from "../assets/yugioh-characters-category.jpeg";
@@ -17,7 +14,7 @@ function Home_Page() {
         text={
           "Explore the complete collection of Yu-Gi-Oh cards and build your ultimate deck today!"
         }
-        buttonText={"Get them all"}
+        cta={"Get them all"}
         img={duel}
         color={"blue"}
       />
@@ -26,7 +23,7 @@ function Home_Page() {
         text={
           "Create your custom Duel Monster in 2 minutes to take on any duel and face the toughest opponents"
         }
-        buttonText={"Create now"}
+        cta={"Create now"}
         img={bestMonsters}
         color={"violet"}
       />
@@ -35,7 +32,7 @@ function Home_Page() {
         text={
           "Step into the legendary world of Yu-Gi-Oh and experience the ultimate dueling adventure!"
         }
-        buttonText={"Discover"}
+        cta={"Discover"}
         img={magicienne}
         color={"darkBlue"}
       />

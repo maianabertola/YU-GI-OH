@@ -39,8 +39,18 @@ function All_Cards() {
   return (
     <>
       <Header_Bottom />
+
         <input type="search" value={searchCard} onChange={(event) => {setSearchCard(event.target.value)}}></input>
      <div className="container">
+
+      <input
+        type="search"
+        value={searchCard}
+        onChange={(event) => {
+          setSearchCard(event.target.value);
+        }}
+      ></input>
+      <div className="container">
         {cardToDisplay.map((card) => {
           console.log(card)
           return (
