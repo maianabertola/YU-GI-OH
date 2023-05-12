@@ -63,8 +63,9 @@ function All_Cards() {
           );
         })}
       </div>
+      </div>
     </>
   );
 }
 
-export default All_Cards;
+export default All_Cards
