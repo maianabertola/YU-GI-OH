@@ -1,6 +1,13 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
+import Button from "../conponents/Button";
+import "../conponents/Form.css";
 
-function QuestionAttribute({ attribute, setAttribute }) {
+function QuestionAttribute() {
+  const {
+    attribute: [attribute, setAttribute, handleAttribute],
+  } = useOutletContext();
+
   return (
     <>
       <div className="formContainer">
@@ -17,6 +24,7 @@ function QuestionAttribute({ attribute, setAttribute }) {
           value={attribute}
           onChange={(event) => setAttribute(event.target.value)}
         />
+        <Button onClick={handleAttribute} cta={"Next question"}></Button>
       </div>
     </>
   );

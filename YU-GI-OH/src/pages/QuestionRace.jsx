@@ -2,34 +2,34 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 import Button from "../conponents/Button";
 import "../conponents/Form.css";
-import dragonKnight from "../assets/dragon knight.jpeg";
+import dragonRed from "../assets/dragon_red.jpeg";
 
-function QuestionAttack() {
+function QuestionRace() {
   const {
-    attack: [attack, setAttack, handleAttack],
+    race: [race, setRace, handleRace],
   } = useOutletContext();
 
   return (
     <>
       <div className="formContainer">
         <div className="imageContainer">
-          <img src={dragonKnight} alt="dragon knight"></img>
+          <img src={dragonRed} alt="alt"></img>
         </div>
 
         <div className="textFormContainer"></div>
         <div className="inputContainer">
-          <label htmlFor="attack">Define its attack power</label>
+          <label htmlFor="race">Choose its race</label>
           <input
             type="number"
-            id="attack"
-            value={attack}
-            onChange={(event) => setAttack(event.target.value)}
+            id="race"
+            value={race}
+            onChange={(event) => setRace(event.target.value)}
           />
-          <Button onClick={handleAttack} cta={"Next"}></Button>
+          <Button onClick={handleRace} cta={"Next"}></Button>
         </div>
       </div>
     </>
   );
 }
 
-export default QuestionAttack;
+export default QuestionRace;

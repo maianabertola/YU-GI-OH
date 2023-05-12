@@ -5,7 +5,7 @@ import img_encart1 from "../assets/Img_encart1.jpeg";
 function Callout({ title, text, buttonText, img, color }) {
   let myStyle;
 
-  console.log(color);
+  // console.log(color);
 
   if (color === "blue") {
     myStyle = {
