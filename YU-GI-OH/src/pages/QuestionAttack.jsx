@@ -13,19 +13,27 @@ function QuestionAttack() {
     <>
       <div className="formContainer">
         <div className="imageContainer">
-          <img src={dragonKnight} alt="dragon knight"></img>
+          <img src={dragonKnight} alt="dragon knight" className="imgForm"></img>
         </div>
 
-        <div className="textFormContainer"></div>
-        <div className="inputContainer">
-          <label htmlFor="attack">Define its attack power</label>
-          <input
-            type="number"
-            id="attack"
-            value={attack}
-            onChange={(event) => setAttack(event.target.value)}
-          />
-          <Button onClick={handleAttack} cta={"Next"}></Button>
+        <div className="textFormContainer">
+          <div className="inputContainer">
+            <label htmlFor="attack">Define its attack power</label>
+            <input
+              type="number"
+              id="attack"
+              value={attack}
+              onChange={(event) => setAttack(event.target.value)}
+            />
+            {attack !== "" ? (
+              <Button onClick={handleAttack} cta={"Next"}></Button>
+            ) : (
+              <div className="">
+                You can read this? Good. But please fullfil this form.
+                P-L-E-A-S-E.
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>

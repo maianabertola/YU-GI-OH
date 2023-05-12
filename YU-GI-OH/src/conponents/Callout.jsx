@@ -1,8 +1,7 @@
 import React from "react";
 import "./Callout.css";
-import img_encart1 from "../assets/Img_encart1.jpeg";
-
-function Callout({ title, text, buttonText, img, color }) {
+import Button from "./Button";
+function Callout({ title, text, cta, img, color }) {
   let myStyle;
 
   // console.log(color);
@@ -32,7 +31,7 @@ function Callout({ title, text, buttonText, img, color }) {
       <div className="textContainer">
         <h2>{title}</h2>
         <p>{text}</p>
-        <div>{buttonText}</div>
+        <Button>{cta}</Button>
       </div>
       <img src={img} />
     </div>
