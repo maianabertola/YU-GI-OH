@@ -4,34 +4,38 @@ import "./App.css";
 // import Description_Page from "./conponents/Description_Page"
 // import CardDetails from "./conponents/CardDetails";
 // import Form from "./conponents/Form";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
 import Home_Page from "./pages/Home_Page";
 import All_Cards from "./pages/All_Cards";
-import Create from "./pages/Create";
 import About from "./pages/About";
-
-import "./conponents/Header";
-import Header from "./conponents/Header";
-import Footer from "./conponents/Footer";
-import Should_you_buy from "./conponents/Should_you_buy";
-import Description_Page from "./conponents/Description_Page";
-import Callout from "./conponents/Callout";
-import CardDetails from "./conponents/CardDetails";
-import Form from "./conponents/Form";
-import Question from "./conponents/Question";
-import About from "./pages/About";
+import Layout from "./conponents/Layout";
+import FormPage from "./pages/FormPage";
+import QuestionName from "./pages/QuestionName";
+import QuestionAttribute from "./pages/QuestionAttribute";
+import QuestionType from "./pages/QuestionType";
+import QuestionAttack from "./pages/QuestionAttack";
+import QuestionDefense from "./pages/QuestionDefense";
+import QuestionDescription from "./pages/QuestionDescription";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home_Page />} />
-        <Route path="/All_Cards" element={<All_Cards />} />
-        <Route path="/Create" element={<Create />} />
-        <Route path="/About" element={<About />} />
+        <Route element={<Layout />}>
+          <Route index element={<Home_Page />} />
+          <Route path="/all-cards" element={<All_Cards />} />
+          <Route path="/create-card" element={<FormPage />}>
+            <Route path="name-card" element={<QuestionName />} />
+            <Route path="type" element={<QuestionType />} />
+            <Route path="attribute-card" element={<QuestionAttribute />} />
+            <Route path="attack" element={<QuestionAttack />} />
+            <Route path="defense" element={<QuestionDefense />} />
+            <Route path="description" element={<QuestionDescription />} />
+          </Route>
+          <Route path="/about" element={<About />} />
+        </Route>
       </Routes>
-
     </>
   );
 }

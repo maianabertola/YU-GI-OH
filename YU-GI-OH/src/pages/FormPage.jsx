@@ -1,8 +1,13 @@
 import React from "react";
-import { Form } from "react-router-dom";
+import "../conponents/Form.css";
+import Form from "../conponents/Form";
 
 function FormPage() {
-  return <Form></Form>;
+  return (
+    <>
+      <Form></Form>
+    </>
+  );
 }
 
 export default FormPage;
