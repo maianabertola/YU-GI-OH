@@ -8,7 +8,7 @@ function Header_Bottom() {
         <div className="header_discover">
           <h1>Welcome Duelist</h1>
           <p>It's time to Du-du-duel!</p>
-          <div className="sliderButton">Discover</div>
+          <div className="sliderButton" >Discover</div>
         </div>
       </div>
     </>
