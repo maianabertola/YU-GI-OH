@@ -1,0 +1,30 @@
+.cardDes {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+}
+
+.detailCard {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-left: 10rem;
+}
+
+.block {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.lvl {
+    width: 600px;
+    display: flex;
+}
+
+.id {
+    width: 600px;
+    font-size: 10%;
+}

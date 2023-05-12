@@ -4,7 +4,7 @@ import "./App.css";
 // import Description_Page from "./conponents/Description_Page"
 // import CardDetails from "./conponents/CardDetails";
 // import Form from "./conponents/Form";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React from "react";
 import Home_Page from "./pages/Home_Page";
 import All_Cards from "./pages/All_Cards";
@@ -17,14 +17,19 @@ import QuestionType from "./pages/QuestionType";
 import QuestionAttack from "./pages/QuestionAttack";
 import QuestionDefense from "./pages/QuestionDefense";
 import QuestionDescription from "./pages/QuestionDescription";
+import DescriptionCard from "./pages/DescriptionCard";
+import CardDetails from "./conponents/CardDetails"
+import Oopsies from "./pages/Oopsies";
 
 function App() {
   return (
     <>
+    {/* <CardDetails /> */}
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home_Page />} />
           <Route path="/all-cards" element={<All_Cards />} />
+          <Route path="/all-cards/:id" element={<DescriptionCard />} />
           <Route path="/create-card" element={<FormPage />}>
             <Route path="name-card" element={<QuestionName />} />
             <Route path="type" element={<QuestionType />} />
@@ -35,6 +40,7 @@ function App() {
           </Route>
           <Route path="/about" element={<About />} />
         </Route>
+        <Route path="*" element={<Oopsies />} />
       </Routes>
     </>
   );
