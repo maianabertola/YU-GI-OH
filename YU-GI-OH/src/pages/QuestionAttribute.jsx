@@ -1,6 +1,6 @@
 import React from "react";
 
-function QuestionAttribute() {
+function QuestionAttribute({ attribute, setAttribute }) {
   return (
     <>
       <div className="formContainer">

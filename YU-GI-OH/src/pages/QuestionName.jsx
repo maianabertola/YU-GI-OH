@@ -1,6 +1,10 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 
-function QuestionName({ name, setName, handleName }) {
+function QuestionName() {
+  const {
+    name: [name, setName, handleName],
+  } = useOutletContext();
   return (
     <>
       <div className="formContainer">
@@ -9,7 +13,6 @@ function QuestionName({ name, setName, handleName }) {
         </div>
 
         <div className="textFormContainer">
-          {/* <h1 className="titleForm">Free your creative spirit</h1> */}
           <div className="inputContainer">
             <label htmlFor="name">What's the name of your monster?</label>
             <input
@@ -18,7 +21,7 @@ function QuestionName({ name, setName, handleName }) {
               value={name}
               onChange={(event) => setName(event.target.value)}
             />
-            <button onClick={handleName}></button>
+            <button onClick={handleName}>Hello</button>
           </div>
         </div>
       </div>

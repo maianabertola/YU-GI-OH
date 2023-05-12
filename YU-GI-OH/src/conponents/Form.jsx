@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Form.css";
 import groupArtwork from "../assets/yu-gi-oh-group-i32848.jpeg";
-import { Link } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import axios from "axios";
 import QuestionName from "../pages/QuestionName";
 import QuestionAttribute from "../pages/QuestionAttribute";
@@ -15,8 +15,12 @@ function Form() {
   const [attack, setAttack] = useState(0);
   const [defense, setDefense] = useState(0);
   const [description, setDescription] = useState("");
+  const [formData, setFormData] = useState({ name: "", attributes: "" });
+  const navigate = useNavigate();
 
-  function handleName() {}
+  function handleName() {
+    navigate("attribute-card");
+  }
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -32,7 +36,7 @@ function Form() {
       console.log("BUG DATA:", error);
     }
   }
-
+  // name='desciption' onChange={(e) => setFormData({...formData, [e.target.name]: e.target.value})}
   return (
     <>
       <div className="formContainer">
@@ -50,10 +54,17 @@ function Form() {
             Create your custom Duel Monster in 2 minutes to take on any duel and
             face the toughest opponents.
           </article>
-          <button>Create my card</button>
+          <Link to="name-card">
+            <button>Create my card</button>
+          </Link>
         </div>
       </div>
-      <QuestionName name={name} setName={setName} handleName={handleName} />
+      <Outlet
+        context={{
+          name: [name, setName, handleName],
+        }}
+      />
+      {/* <QuestionName name={name} setName={setName} handleName={handleName} />
       <QuestionAttribute attribute={attribute} setAttribute={setAttribute} />
       <QuestionAttack attack={attack} setAttack={setAttack} />
       <QuestionDefense defense={defense} setDefense={setDefense} />
@@ -61,7 +72,7 @@ function Form() {
         description={description}
         setDescription={setDescription}
         handleSubmit={handleSubmit}
-      />
+      /> */}
     </>
   );
 }
