@@ -67,7 +67,7 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input {
+.inputForm {
   width: 100%;
   height: 3rem;
   margin: 0.5rem 0;
@@ -87,6 +87,6 @@ textarea {
   color: white;
 }
 
-<!-- HTML !-->
-<button class="button-24" role="button">Button 24</button>
-
+hr {
+  margin: 2rem O;
+}

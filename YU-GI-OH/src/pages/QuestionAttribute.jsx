@@ -25,7 +25,7 @@ function QuestionAttribute() {
             <div className="inputContainer">
               <label htmlFor="name">What's its attribute?</label>
               <hr></hr>
-              <input
+              <input className="inputForm"
                 type="text"
                 id="attribute"
                 value={attribute}

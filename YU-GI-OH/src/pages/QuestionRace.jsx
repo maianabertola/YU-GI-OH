@@ -21,7 +21,7 @@ function QuestionRace() {
             <div className="inputContainer">
               <label htmlFor="name">Choose its race</label>
               <hr></hr>
-              <input
+              <input className="inputForm"
                 type="text"
                 id="race"
                 value={race}

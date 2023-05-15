@@ -38,15 +38,25 @@ function All_Cards() {
 
   return (
     <>
+
+      <Header_Bottom />
+
+     <div className="container">
+      <form action="">
+      <input className="find"
+        type="search" required
+
       {/* <Header_Bottom /> */}
 
       <input
         type="search"
+
         value={searchCard}
         onChange={(event) => {
           setSearchCard(event.target.value);
         }}
       ></input>
+      </form>
       <div className="container">
         <input
           type="search"
