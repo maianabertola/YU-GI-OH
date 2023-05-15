@@ -40,6 +40,7 @@ function All_Cards() {
     <>
       <Header_Bottom />
 
+
       <div className="container">
         <form action="">
           <input className="find" type="search" required />

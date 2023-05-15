@@ -13,6 +13,14 @@
     flex-direction: column;
 }
 
+.presentation {
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: -3rem;
+    z-index: 7;
+    width: 42rem;
+}
+
 .page h1 {
     font-size: 400%;
     margin-bottom: 4rem;
