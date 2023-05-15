@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+
 import Home_Page from "./pages/Home_Page";
 import All_Cards from "./pages/All_Cards";
 import About from "./pages/About";
@@ -14,8 +15,7 @@ import QuestionDescription from "./pages/QuestionDescription";
 import DescriptionCard from "./pages/DescriptionCard";
 
 import Oopsies from "./pages/Oopsies";
-import { Route, Routes } from "react-router-dom"
-
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (

@@ -19,7 +19,7 @@ header {
   text-decoration: none;
 }
 
-.header_body {
+.heroContainer {
   display: flex;
   height: 35rem;
   background-image: url(../../public/assets/slider.png);
@@ -28,32 +28,14 @@ header {
   padding-bottom: 10rem;
 }
 
-.header_discover {
+.heroDiscover {
   background-color: rgb(25, 25, 25, 85%);
   margin-left: 5rem;
   margin-top: 20rem;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header_discover h1 {
-  color: rgb(152, 155, 157, 85%);
-  margin-bottom: 1rem;
-}
-
-.header_discover P {
-  color: rgb(255, 255, 255);
-  margin-bottom: 1rem;
-}
-
-.sliderButton {
-  background-color: rgb(180, 40, 36);
-  color: rgb(255, 255, 255);
-  padding: 1rem 2.5rem;
-  font-family: "Blinker-SemiBold";
-  font-size: 2rem;
 }
 
 .containerLogo {
