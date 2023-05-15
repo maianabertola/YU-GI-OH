@@ -23,7 +23,7 @@ function All_Cards() {
     fetchCards();
   }, []);
 
-  console.log(cards[0]);
+  // console.log(cards[0]);
   let cardToDisplay = {};
   if (searchCard === "") {
     cardToDisplay = cards;
@@ -38,41 +38,35 @@ function All_Cards() {
 
   return (
     <>
-      {/* <Header_Bottom /> */}
-
+    <Header_Bottom />
+    <form action="">
       <input
-        type="search"
+        type="search" className="find" required
         value={searchCard}
         onChange={(event) => {
           setSearchCard(event.target.value);
         }}
       ></input>
-      <div className="container">
-        <input
-          type="search"
-          value={searchCard}
-          onChange={(event) => {
-            setSearchCard(event.target.value);
-          }}
-        ></input>
+    </form>
         <div className="container">
           {cardToDisplay.map((card) => {
-            console.log(card);
+            {/* console.log(card); */}
             return (
               <div key={card._id} className="card">
+                <Link to={`/all-cards/${card._id}`}>
+                <div className="box_Card">
                 <img
                   src={card.card_images[0].image_url}
                   alt="card"
                   className="imgC"
                 ></img>
-                <Link to={`/all-cards/${card._id}`}>
-                  <h3 className="button name">{card.name} </h3>
+                  <h3 className="button-49">{card.name}</h3>
+                </div>
                 </Link>
               </div>
             );
           })}
         </div>
-      </div>
     </>
   );
 }

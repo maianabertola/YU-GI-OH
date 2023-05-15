@@ -1,8 +1,7 @@
-import '../conponents/Description_page.css'
-import React from 'react'
+import "../conponents/Description_page.css";
+import React from "react";
 
 function Description_Page() {
-
   return (
     <>
       <div className="page">
@@ -27,6 +26,13 @@ function Description_Page() {
           ></img>
         </div>
         <div className="page_right">
+          <div className="presentation">
+            <p>
+              遊☆戯☆王, Yūgiō? literally "The King of Games." It’s a shōnen
+              manga written and drawn by Kazuki Takahashi, published between
+              September 1996 and 2004.
+            </p>
+          </div>
           <div className="text_page">
             <div>
               <strong>The rules are simple: the first one to lose dies.</strong>
@@ -61,15 +67,13 @@ function Description_Page() {
                 using a deck of 40-60 cards and an optional "Extra Deck" of up
                 to 15 cards.
               </p>
-            </div> 
-            <div>
-              
             </div>
+            <div></div>
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Description_Page
+export default Description_Page;
