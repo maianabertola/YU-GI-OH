@@ -38,49 +38,45 @@ function All_Cards() {
 
   return (
     <>
-
       <Header_Bottom />
 
-     <div className="container">
-      <form action="">
-      <input className="find"
-        type="search" required
 
-      {/* <Header_Bottom /> */}
-
-      <input
-        type="search"
-
-        value={searchCard}
-        onChange={(event) => {
-          setSearchCard(event.target.value);
-        }}
-      ></input>
-      </form>
       <div className="container">
-        <input
-          type="search"
-          value={searchCard}
-          onChange={(event) => {
-            setSearchCard(event.target.value);
-          }}
-        ></input>
+        <form action="">
+          <input className="find" type="search" required />
+          <input
+            type="search"
+            value={searchCard}
+            onChange={(event) => {
+              setSearchCard(event.target.value);
+            }}
+          />
+        </form>
         <div className="container">
-          {cardToDisplay.map((card) => {
-            console.log(card);
-            return (
-              <div key={card._id} className="card">
-                <img
-                  src={card.card_images[0].image_url}
-                  alt="card"
-                  className="imgC"
-                ></img>
-                <Link to={`/all-cards/${card._id}`}>
-                  <h3 className="button name">{card.name} </h3>
-                </Link>
-              </div>
-            );
-          })}
+          <input
+            type="search"
+            value={searchCard}
+            onChange={(event) => {
+              setSearchCard(event.target.value);
+            }}
+          />
+          <div className="container">
+            {cardToDisplay.map((card) => {
+              console.log(card);
+              return (
+                <div key={card._id} className="card">
+                  <img
+                    src={card.card_images[0].image_url}
+                    alt="card"
+                    className="imgC"
+                  ></img>
+                  <Link to={`/all-cards/${card._id}`}>
+                    <h3 className="button name">{card.name} </h3>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
