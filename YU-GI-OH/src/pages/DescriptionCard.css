@@ -1,22 +1,53 @@
-.cardDes {
+
+
+.cardDes {   
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+    background-color: rgb(25, 25, 25, 85%);
+    padding: 3rem 2rem 2rem 2rem;
+    margin-left: 3em;
+    margin-right: 3rem;
+    border: 2px solid rgb(152, 155, 157);
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
-    margin-left: 10rem;
-    margin-bottom: 10rem;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: content-box;
+}
+
+
+.img {
+ border: 2px solid red;   
 }
 
 .detailCard {
     display: flex;
     flex-direction: column;
-    width: 20rem;
-    margin-left: 10rem;
+    align-items: flex-end
 }
 
 .block {
     width: 600px;
     display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;   
+}
+
+.name {
+    width: 600px;
+    display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.font_color {
+    background-color: rgb(60, 60, 58, 85%);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 20px;
+    border: 2px solid rgb(152, 155, 157); 
+    margin-left: 1rem;
 }
 
 .lvl {
@@ -38,6 +69,10 @@
     align-items: center;
     margin-left: 3rem;
     margin-right: 3rem;
+    padding-top: 4rem;
+    border: 2px solid rgb(152, 155, 157);
+    background-color: rgb(25, 25, 25, 85%);
+    border-radius: 10px;
 }
 
 .rarity {
@@ -48,7 +83,7 @@
     width: 300px; 
     height: 250px; 
     border-radius: 200px; 
-    background-color: rgb(22, 55, 241);
+    background-color: rgb(4 19 102);
     padding-top: 3rem;
     font-size: 170%;
 }
@@ -71,15 +106,17 @@
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    background-color: rgb(241, 22, 193);
-    margin-left: 14rem;
     margin-top: -8rem;
     justify-content: center;
 }
 
-.cost > div {
+.bubble1 {
     margin-right: 14rem;
-    background-color: rgba(22, 241, 44, 1);
+    background-color: rgb(6 93 15);
+}
+
+.bubble2 {
+    background-color: rgb(93 6 86)
 }
 
 .price button {
@@ -91,9 +128,8 @@
 }
 
 .fin {
-    width: 500px;
+    width: 850px;
     margin-bottom: 4rem;
-    margin-top: 3rem;
     color: rgb(152, 155, 157, 85%);
-    font-size: 300%;
+    font-size: 400%;
 }

@@ -5,6 +5,7 @@
     background-color:  rgb(25, 25, 25, 85%);
     margin-left: 3rem;
     margin-right: 3rem;
+    padding-top: 3rem;
 }
 
 .Should_you_buy h1 {
@@ -22,7 +23,7 @@
     width: 300px; 
     height: 250px; 
     border-radius: 200px; 
-    background-color: rgb(22, 55, 241);
+    background-color: rgb(241, 241, 22);
     padding-top: 3rem;
     font-size: 170%;
 }
@@ -46,13 +47,13 @@
     height: 200px;
     border-radius: 100px;
     background-color: rgb(241, 22, 193);
-    margin-left: 5rem;
+    margin-left: 15rem;
     margin-top: -8rem;
     justify-content: center;
 }
 
 .prices > div {
-    margin-right: 5rem;
+    margin-right: 15rem;
     background-color: rgba(22, 241, 44, 1);
 }
 
@@ -61,5 +62,13 @@
     color: rgb(255, 255, 255);
     padding: 1rem 5rem 1rem 5rem;
     margin-bottom: 3rem;
+    font-size: 100%;
+}
+
+.color {
+    color: black;
+}
+
+.text {
     font-size: 100%;
 }

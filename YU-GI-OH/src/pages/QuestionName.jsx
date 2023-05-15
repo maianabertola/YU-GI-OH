@@ -27,7 +27,7 @@ function QuestionName() {
             <div className="inputContainer">
               <label htmlFor="name">What's the name of your monster?</label>
               <hr></hr>
-              <input
+              <input className="inputForm"
                 type="text"
                 id="name"
                 value={name}

@@ -19,7 +19,7 @@ function QuestionAttack() {
         <div className="textFormContainer">
           <div className="inputContainer">
             <label htmlFor="attack">Define its attack power</label>
-            <input
+            <input 
               type="number"
               id="attack"
               value={attack}
