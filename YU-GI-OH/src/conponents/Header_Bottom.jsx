@@ -5,8 +5,8 @@ import Button from "./Button";
 function Header_Bottom() {
   return (
     <>
-      <div className="header_body">
-        <div className="header_discover">
+      <div className="heroContainer">
+        <div className="heroDiscover">
           <h1>Welcome Duelist</h1>
           <p>It's time to Du-du-duel!</p>
           <Button cta={"Discover"}></Button>

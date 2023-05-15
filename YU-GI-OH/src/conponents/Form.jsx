@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./Form.css";
 import groupArtwork from "../assets/yu-gi-oh-group-i32848.jpeg";
-import { Link, Navigate, Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Button from "./Button";
-import { useEffect } from "react";
 
 function Form() {
   const [name, setName] = useState("");

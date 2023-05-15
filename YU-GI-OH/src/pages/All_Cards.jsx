@@ -23,7 +23,7 @@ function All_Cards() {
     fetchCards();
   }, []);
 
-  console.log(cards[0])
+  console.log(cards[0]);
   let cardToDisplay = {};
   if (searchCard === "") {
     cardToDisplay = cards;
@@ -35,15 +35,22 @@ function All_Cards() {
   if (!cards.length) {
     return <div>Wait</div>;
   }
-  
+
   return (
     <>
+
       <Header_Bottom />
 
      <div className="container">
       <form action="">
       <input className="find"
         type="search" required
+
+      {/* <Header_Bottom /> */}
+
+      <input
+        type="search"
+
         value={searchCard}
         onChange={(event) => {
           setSearchCard(event.target.value);
@@ -51,21 +58,33 @@ function All_Cards() {
       ></input>
       </form>
       <div className="container">
-        {cardToDisplay.map((card) => {
-          console.log(card)
-          return (
-            <div key={card._id} className="card">
-              <img src={card.card_images[0].image_url} alt="card" className="imgC"></img>
-              <Link to={`/all-cards/${card._id}`} >
-                <h3 className="button name">{card.name} </h3>
-              </Link>
-            </div>
-          );
-        })}
-      </div>
+        <input
+          type="search"
+          value={searchCard}
+          onChange={(event) => {
+            setSearchCard(event.target.value);
+          }}
+        ></input>
+        <div className="container">
+          {cardToDisplay.map((card) => {
+            console.log(card);
+            return (
+              <div key={card._id} className="card">
+                <img
+                  src={card.card_images[0].image_url}
+                  alt="card"
+                  className="imgC"
+                ></img>
+                <Link to={`/all-cards/${card._id}`}>
+                  <h3 className="button name">{card.name} </h3>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );
 }
 
-export default All_Cards
+export default All_Cards;
