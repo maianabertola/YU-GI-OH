@@ -21,7 +21,7 @@ function QuestionDefense() {
             <label htmlFor="defense">
               How many defense points do you want to assign to your monster?
             </label>
-            <input
+            <input className="inputForm"
               type="number"
               id="defense"
               value={defense}

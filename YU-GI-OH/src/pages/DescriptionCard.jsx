@@ -80,6 +80,7 @@ function DescriptionCard() {
             </div>
           </div>
         </div>
+
         <div className="price">
           <div className="rarity">
             <p>rarity</p>
