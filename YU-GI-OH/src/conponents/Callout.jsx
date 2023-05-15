@@ -1,6 +1,7 @@
 import React from "react";
 import "./Callout.css";
 import Button from "./Button";
+
 function Callout({ title, text, cta, img, color }) {
   let myStyle;
 
@@ -31,7 +32,7 @@ function Callout({ title, text, cta, img, color }) {
       <div className="textContainer">
         <h2>{title}</h2>
         <p>{text}</p>
-        <Button>{cta}</Button>
+        <Button cta={cta}></Button>
       </div>
       <img src={img} />
     </div>

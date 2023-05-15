@@ -1,0 +1,30 @@
+.heroContainerVideo {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.reactPlayer {
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.containerHeroInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+}
