@@ -30,7 +30,7 @@
     width: 600px;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 2rem;   
+    margin-bottom: 2rem;  
 }
 
 .name {
@@ -46,8 +46,12 @@
     background-color: rgb(60, 60, 58, 85%);
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 20px;
-    border: 2px solid rgb(152, 155, 157); 
+    border: 2px solid rgb(219, 226, 164); 
     margin-left: 1rem;
+}
+
+.font_color p {
+    color: rgb(177, 177, 177);
 }
 
 .lvl {

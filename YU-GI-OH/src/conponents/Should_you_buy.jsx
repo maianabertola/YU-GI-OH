@@ -1,5 +1,6 @@
 import React from 'react'
 import './Should_you_buy.css'
+import { Link } from 'react-router-dom'
 
 function Should_you_buy() {
   return (
@@ -18,7 +19,9 @@ function Should_you_buy() {
                 <p className='color text'>cards sold over the world</p>
             </div>
         </div>
+        <Link to="https://www.yugioh-card.com/eu/fr/play/20980-2/">
         <button>Yes, just do it</button>
+        </Link>
     </div>
   )
 }
