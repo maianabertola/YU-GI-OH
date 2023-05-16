@@ -25,3 +25,9 @@ footer {
   font-size: small;
   color: rgb(217, 217, 217, 100%);
 }
+
+.socialIconsContainer {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}

@@ -17,6 +17,7 @@
   touch-action: manipulation;
   text-align: center;
   margin: 2rem 0;
+  cursor: pointer;
 }
 
 .button-49:after {

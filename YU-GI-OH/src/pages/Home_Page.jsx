@@ -5,33 +5,31 @@ import duel from "../assets/duel.jpeg";
 import bestMonsters from "../assets/yugioh-characters-category.jpeg";
 import HeroSectionVideo from "../conponents/HeroSectionVideo";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Home_Page() {
+  const navigate = useNavigate();
   const callOut = useRef();
-  console.log(callOut);
-
-  // console.log(callOut.current.offsetTop);
 
   function scrollToSection() {
     callOut.current.scrollIntoView();
     console.log(callOut.current);
   }
 
-  // useEffect(() => {
-  //   // scrollToSection(callOut);
-  // });
+  function navToAllCards(event) {
+    event.preventDefault();
+    navigate("all-cards");
+  }
 
-  // console.log(callOut.current.offsetTop);
+  function navToForm(event) {
+    event.preventDefault();
+    navigate("create-card");
+  }
 
-  // console.log(scrollToSection(callOut));
-
-  // const num = 2;
-
-  // function test(value) {
-  //   const nomb = value + 2;
-  //   return nomb;
-  // }
-
+  function navToAbout() {
+    event.preventDefault();
+    navigate("about");
+  }
   return (
     <>
       <HeroSectionVideo theFunction={scrollToSection} />
@@ -45,6 +43,7 @@ function Home_Page() {
             cta={"Get them all"}
             img={duel}
             color={"blue"}
+            url={navToAllCards}
           />
         </div>
         <Callout
@@ -55,6 +54,7 @@ function Home_Page() {
           cta={"Create now"}
           img={bestMonsters}
           color={"violet"}
+          url={navToForm}
         />
         <Callout
           title={"Enter the Legend"}
@@ -64,6 +64,7 @@ function Home_Page() {
           cta={"Discover"}
           img={magicienne}
           color={"darkBlue"}
+          url={navToAbout}
         />
       </section>
     </>

@@ -16,26 +16,28 @@ function QuestionDefense() {
           <img src={robot} alt="robot yu gi oh" className="imgForm"></img>
         </div>
 
-        <div className="textFormContainer">
+        <div className="questionFormContainer">
           <div className="inputContainer">
             <label htmlFor="defense">
               How many defense points do you want to assign to your monster?
             </label>
-            <input className="inputForm"
+            <hr></hr>
+            <input
+              className="inputForm"
               type="number"
               id="defense"
               value={defense}
               onChange={(event) => setDefense(event.target.value)}
             />
+            {defense !== "" ? (
+              <Button onClick={handleDefense} cta={"Next question"}></Button>
+            ) : (
+              <div className="" style={{ textAlign: "right", width: 380 }}>
+                Are you able to read this? If so, it indicates that you need to
+                complete the form in order to move to the next step.
+              </div>
+            )}
           </div>
-          {defense !== "" ? (
-            <Button onClick={handleDefense} cta={"Last question"}></Button>
-          ) : (
-            <div className="">
-              You can read this? Good. But please fullfil this form.
-              P-L-E-A-S-E.
-            </div>
-          )}
         </div>
       </div>
     </>

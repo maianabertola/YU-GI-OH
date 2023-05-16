@@ -13,14 +13,14 @@ import QuestionAttack from "./pages/QuestionAttack";
 import QuestionDefense from "./pages/QuestionDefense";
 import QuestionDescription from "./pages/QuestionDescription";
 import DescriptionCard from "./pages/DescriptionCard";
-
 import Oopsies from "./pages/Oopsies";
 import { Route, Routes } from "react-router-dom";
+import QuestionImage from "./pages/QuestionImage";
+import ConfirmationForm from "./conponents/ConfirmationForm";
 
 function App() {
   return (
     <>
-      {/* <CardDetails /> */}
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home_Page />} />
@@ -33,6 +33,11 @@ function App() {
             <Route path="attack" element={<QuestionAttack />} />
             <Route path="defense" element={<QuestionDefense />} />
             <Route path="description" element={<QuestionDescription />} />
+            <Route path="image-monster" element={<QuestionImage />} />
+            <Route
+              path="your-monster-is-created"
+              element={<ConfirmationForm />}
+            />
           </Route>
           <Route path="/about" element={<About />} />
         </Route>
