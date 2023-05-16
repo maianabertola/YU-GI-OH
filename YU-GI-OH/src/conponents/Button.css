@@ -103,7 +103,10 @@
   .button-49:after {
     width: 200px;
     height: 86px;
-    line-height: 88px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

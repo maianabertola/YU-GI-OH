@@ -23,7 +23,7 @@ function All_Cards() {
     fetchCards();
   }, []);
 
-  console.log(cards[0]);
+  // console.log(cards[0]);
   let cardToDisplay = {};
   if (searchCard === "") {
     cardToDisplay = cards;
@@ -38,47 +38,35 @@ function All_Cards() {
 
   return (
     <>
-      <Header_Bottom />
-
-
-      <div className="container">
-        <form action="">
-          <input className="find" type="search" required />
-          <input
-            type="search"
-            value={searchCard}
-            onChange={(event) => {
-              setSearchCard(event.target.value);
-            }}
-          />
-        </form>
+    <Header_Bottom />
+    <form action="">
+      <input
+        type="search" className="find" required
+        value={searchCard}
+        onChange={(event) => {
+          setSearchCard(event.target.value);
+        }}
+      ></input>
+    </form>
         <div className="container">
-          <input
-            type="search"
-            value={searchCard}
-            onChange={(event) => {
-              setSearchCard(event.target.value);
-            }}
-          />
-          <div className="container">
-            {cardToDisplay.map((card) => {
-              console.log(card);
-              return (
-                <div key={card._id} className="card">
-                  <img
-                    src={card.card_images[0].image_url}
-                    alt="card"
-                    className="imgC"
-                  ></img>
-                  <Link to={`/all-cards/${card._id}`}>
-                    <h3 className="button name">{card.name} </h3>
-                  </Link>
+          {cardToDisplay.map((card) => {
+            {/* console.log(card); */}
+            return (
+              <div key={card._id} className="card">
+                <Link to={`/all-cards/${card._id}`}>
+                <div className="box_Card">
+                <img
+                  src={card.card_images[0].image_url}
+                  alt="card"
+                  className="imgC"
+                ></img>
+                  <h3 className="button-49">{card.name}</h3>
                 </div>
-              );
-            })}
-          </div>
+                </Link>
+              </div>
+            );
+          })}
         </div>
-      </div>
     </>
   );
 }
