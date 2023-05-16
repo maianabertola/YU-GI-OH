@@ -1,8 +1,7 @@
 import { SocialIcon } from "react-social-icons";
-import React from 'react'
-import './Footer.css'
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import "./Footer.css";
+import { Link } from "react-router-dom";
 
 //ajouter l'image du button en absolute dans l'input
 function Footer() {
@@ -16,8 +15,8 @@ function Footer() {
               url="https://www.facebook.com/YuGiOhCardEU"
               bgColor="grey"
               style={{
-                height: 25,
-                width: 25,
+                height: 32,
+                width: 32,
                 marginRight: 10,
                 cursor: "pointer",
               }}
@@ -26,8 +25,8 @@ function Footer() {
               url="https://www.instagram.com/YuGiOhCardEU/"
               bgColor="grey"
               style={{
-                height: 25,
-                width: 25,
+                height: 32,
+                width: 32,
                 marginRight: 10,
                 cursor: "pointer",
               }}
@@ -36,8 +35,8 @@ function Footer() {
               url="https://www.twitch.tv/YuGiOhCardEU"
               bgColor="grey"
               style={{
-                height: 25,
-                width: 25,
+                height: 32,
+                width: 32,
                 marginRight: 10,
                 cursor: "pointer",
               }}
@@ -46,8 +45,8 @@ function Footer() {
               url="https://twitter.com/YuGiOhCardEU"
               bgColor="grey"
               style={{
-                height: 25,
-                width: 25,
+                height: 32,
+                width: 32,
                 marginRight: 10,
                 cursor: "pointer",
               }}
@@ -56,34 +55,25 @@ function Footer() {
               url="https://www.youtube.com/YuGiOhCardEU"
               bgColor="grey"
               style={{
-                height: 25,
-                width: 25,
+                height: 32,
+                width: 32,
                 cursor: "pointer",
               }}
             ></SocialIcon>
           </div>
         </div>
-        {/* <div className="text_footer">
-          <strong className="strong_footer">Find Your Card</strong>
-          <input type="search"></input>
-        </div> */}
+
+        <div className="text_footer">
+          <strong className="strong_footer">Looking for a card?</strong>
+          <Link to="/all-cards" className="linkFooter">
+            Find it here in one click
+          </Link>
+        </div>
         <div className="text_footer">
           <strong className="strong_footer">Legal</strong>
           <p>This is a student project, please be friendly</p>
         </div>
       </footer>
-
-<div className='text_footer second_foot'>
-            <strong className='strong_footer'>Find Your Card</strong>
-            <Link to="/all-cards">
-              <button className='button'>Let's go</button>
-            </Link>
-          </div>
-          <div className='text_footer'>
-            <strong className='strong_footer'>Legal</strong>
-            <p>this is a student project please be friendly</p>
-          </div>
-        </footer>
     </>
   );
 }

@@ -2,8 +2,9 @@ footer {
   display: flex;
   justify-content: space-evenly;
   background-color: rgba(3, 3, 3, 0.911);
-  height: 10rem;
-  align-items: center;
+  height: 6rem;
+  align-items: flex-start;
+  padding-top: 1.5rem;
 }
 
 .text_footer {
@@ -22,10 +23,18 @@ footer {
 }
 
 .text_footer p {
-  font-size: small;
+  font-size: 1rem;
   color: rgb(217, 217, 217, 100%);
 }
 
+.linkFooter {
+  font-size: 1rem;
+  color: rgb(217, 217, 217, 100%);
+}
+
+.linkFooter:hover {
+  color: #ff013c;
+}
 
 .socialIconsContainer {
   display: flex;

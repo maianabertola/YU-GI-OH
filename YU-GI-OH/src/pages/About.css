@@ -1,0 +1,91 @@
+.page {
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  background-color: rgb(25, 25, 25, 85%);
+  margin-top: 3rem;
+}
+
+.left_page {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation {
+  position: absolute;
+  margin-top: 14rem;
+  margin-left: -3rem;
+  z-index: 7;
+  width: 42rem;
+}
+
+.page h1 {
+  font-size: 400%;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+  color: rgb(152, 155, 157, 85%);
+}
+
+.p {
+  width: 300px;
+  display: flex;
+  font-size: 200%;
+  margin-top: 7rem;
+  color: white;
+}
+
+.img20 {
+  width: 500px;
+}
+
+.img22 {
+  width: 350px;
+  margin-top: 15rem;
+}
+
+.text_page {
+  margin-left: 5rem;
+  margin-top: 35rem;
+}
+
+.text_page strong {
+  color: rgb(152, 155, 157, 85%);
+  font-size: 80px;
+}
+
+.text_page p {
+  margin-top: 2rem;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4rem;
+}
+
+.images {
+  display: flex;
+  margin-top: 10rem;
+  height: auto;
+}
+
+.image21 {
+  margin-top: 17rem;
+  margin-right: 6.5rem;
+  margin-left: -3.5rem;
+}
+
+.image23 {
+  width: auto;
+  margin-bottom: 17rem;
+}
+
+.details {
+  color: white;
+  font-size: 30px;
+  margin-top: 5rem;
+}
+
+.details > div {
+  margin-top: 3rem;
+}

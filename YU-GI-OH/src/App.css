@@ -24,12 +24,12 @@ html {
 
 body {
   font: "Blinker-Regular";
-  background-color: hsl(267deg 75.72% 4.85%);
+  background-color: hsl(266, 89%, 4%);
 }
 
-main {
+/* main {
   background-color: hsl(267deg 75.72% 4.85%);
-}
+} */
 
 h1 {
   font-family: "MatrixIIOT-Bold";
@@ -59,4 +59,15 @@ article {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.link {
+  color: hsl(0, 0%, 100%);
+  padding-right: 2rem;
+  color: rgb(217, 217, 217, 100%);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ff013c;
 }
