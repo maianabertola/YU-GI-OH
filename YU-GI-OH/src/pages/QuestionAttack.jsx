@@ -16,10 +16,12 @@ function QuestionAttack() {
           <img src={dragonKnight} alt="dragon knight" className="imgForm"></img>
         </div>
 
-        <div className="textFormContainer">
+        <div className="questionFormContainer">
           <div className="inputContainer">
             <label htmlFor="attack">Define its attack power</label>
-            <input 
+            <hr></hr>
+            <input
+              className="inputForm"
               type="number"
               id="attack"
               value={attack}
@@ -28,9 +30,9 @@ function QuestionAttack() {
             {attack !== "" ? (
               <Button onClick={handleAttack} cta={"Next"}></Button>
             ) : (
-              <div className="">
-                You can read this? Good. But please fullfil this form.
-                P-L-E-A-S-E.
+              <div className="" style={{ textAlign: "right", width: 380 }}>
+                Are you able to read this? If so, it indicates that you need to
+                complete the form in order to move to the next step.
               </div>
             )}
           </div>

@@ -12,8 +12,11 @@ function Form() {
   const [attack, setAttack] = useState(0);
   const [defense, setDefense] = useState(0);
   const [description, setDescription] = useState("");
+  const [imageForm, setImageForm] = useState("");
   const [show, setShow] = useState(true);
   const navigate = useNavigate();
+
+  console.log(imageForm);
 
   function changePage(event) {
     event.preventDefault();
@@ -41,7 +44,12 @@ function Form() {
     navigate("description");
   }
 
+  function handleDescription() {
+    navigate("image-monster");
+  }
+
   async function handleSubmit(event) {
+    console.log("toti");
     event.preventDefault();
     try {
       const response = await axios.post(
@@ -49,11 +57,14 @@ function Form() {
         {
           name: name,
           attribute: attribute,
-          attack: attack,
-          defense: defense,
+          atk: attack,
+          def: defense,
+          desc: description,
+          picture: imageForm.image_url,
         }
       );
       console.log("response", response);
+      navigate("your-monster-is-created");
     } catch (error) {
       console.log("BUG DATA:", error);
     }
@@ -74,8 +85,8 @@ function Form() {
           <div className="textFormContainer">
             <h1 className="titleForm">Free your creative spirit</h1>
             <article>
-              Create your custom Duel Monster in 2 minutes to take on any duel
-              and face the toughest opponents.
+              Create your custom Duel Monster to take on any duel and face the
+              toughest opponents.
             </article>
             <Button cta={"Start"} onClick={changePage}></Button>
           </div>
@@ -91,13 +102,10 @@ function Form() {
         race: [race, setRace, handleRace],
         attack: [attack, setAttack, handleAttack],
         defense: [defense, setDefense, handleDefense],
-        description: [description, setDescription, handleSubmit],
+        description: [description, setDescription, handleDescription],
+        image: [imageForm, setImageForm, handleSubmit],
       }}
     />
   );
 }
-// console.log("espion 3", show);
-
-// console.log("state apres changement", show);
-
 export default Form;

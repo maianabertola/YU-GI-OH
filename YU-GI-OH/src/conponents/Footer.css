@@ -26,9 +26,15 @@ footer {
   color: rgb(217, 217, 217, 100%);
 }
 
+
+.socialIconsContainer {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
 .components {
   display: flex;
-
 }
 
 .photo_footer {

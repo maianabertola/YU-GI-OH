@@ -2,11 +2,11 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 import Button from "../conponents/Button";
 import "../conponents/Form.css";
-import megaDragon from "../assets/megaDragon.png";
+import kaiba from "../assets/kaiba.png";
 
-function QuestionAttribute() {
+function QuestionImage() {
   const {
-    attribute: [attribute, setAttribute, handleAttribute],
+    image: [imageForm, setImageForm, handleSubmit],
   } = useOutletContext();
 
   return (
@@ -14,26 +14,28 @@ function QuestionAttribute() {
       <div>
         <div className="formContainer">
           <div className="imageContainer">
-            <img
-              src={megaDragon}
-              alt="big ass dragon"
-              className="imgForm"
-            ></img>
+            <img src={kaiba} alt="kaiba yugioh" className="imgForm"></img>
           </div>
 
           <div className="textFormContainer">
             <div className="inputContainer">
-              <label htmlFor="name">What's its attribute?</label>
+              <label htmlFor="imageForm">
+                The last question, what will your monster look like?
+              </label>
               <hr></hr>
               <input
                 className="inputForm"
-                type="text"
-                id="attribute"
-                value={attribute}
-                onChange={(event) => setAttribute(event.target.value)}
+                type="file"
+                id="imageForm"
+                accept="image/png"
+                // value={imageForm}
+                onChange={(event) => setImageForm(event.target.value)}
               />
-              {attribute !== "" ? (
-                <Button onClick={handleAttribute} cta={"Next"}></Button>
+              {imageForm !== "" ? (
+                <Button
+                  onClick={handleSubmit}
+                  cta={"Create your monster"}
+                ></Button>
               ) : (
                 <div className="" style={{ textAlign: "right", width: 380 }}>
                   Are you able to read this? If so, it indicates that you need
@@ -48,4 +50,4 @@ function QuestionAttribute() {
   );
 }
 
-export default QuestionAttribute;
+export default QuestionImage;

@@ -10,7 +10,7 @@ function QuestionName() {
     name: [name, setName, handleName],
   } = useOutletContext();
 
-  console.log("ICI", name);
+  // console.log("ICI", name);
   return (
     <>
       <div>
@@ -23,11 +23,12 @@ function QuestionName() {
             ></img>
           </div>
 
-          <div className="textFormContainer">
+          <div className="questionFormContainer">
             <div className="inputContainer">
               <label htmlFor="name">What's the name of your monster?</label>
               <hr></hr>
-              <input className="inputForm"
+              <input
+                className="inputForm"
                 type="text"
                 id="name"
                 value={name}
@@ -37,9 +38,9 @@ function QuestionName() {
               {name !== "" ? (
                 <Button onClick={handleName} cta={"Next"}></Button>
               ) : (
-                <div className="">
-                  You can read this? Good. But please fullfil this form.
-                  P-L-E-A-S-E.
+                <div className="" style={{ textAlign: "right", width: 380 }}>
+                  Are you able to read this? If so, it indicates that you need
+                  to complete the form in order to move to the next step.
                 </div>
               )}
             </div>
