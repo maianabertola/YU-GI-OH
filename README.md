@@ -1,3 +1,0 @@
-# YU-GI-OH
-
-CACAOUETE
