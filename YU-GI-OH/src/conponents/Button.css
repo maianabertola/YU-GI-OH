@@ -3,11 +3,11 @@
   width: 150px;
   height: 76px;
   line-height: 78px;
-  font-size: 20px;
+  font-size: 1.1rem;
   background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
   border: 0;
   color: #fff;
-  letter-spacing: 3px;
+  letter-spacing: 3.2px;
   box-shadow: 6px 0px 0px #e2f600;
   outline: transparent;
   position: relative;
@@ -15,8 +15,9 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   text-align: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .button-49:after {

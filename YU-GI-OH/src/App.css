@@ -41,7 +41,7 @@ h1 {
 
 h2 {
   font-family: "MatrixIIOT-Bold";
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: hsl(0, 0%, 100%);
   margin-bottom: 1rem;
   text-align: center;
@@ -49,7 +49,7 @@ h2 {
 
 p {
   font-family: "Blinker-Regular";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: hsl(204, 2%, 61%);
   margin-bottom: 1rem;
 }

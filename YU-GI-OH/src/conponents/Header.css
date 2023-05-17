@@ -31,6 +31,15 @@ header {
   align-items: center;
 }
 
+.paragraphHeroContainer {
+  width: 70%;
+  text-align: center;
+}
+
+.heroParagraph {
+  font-size: 1.2rem;
+}
+
 .containerLogo {
   max-width: 18rem;
   max-height: 4rem;
