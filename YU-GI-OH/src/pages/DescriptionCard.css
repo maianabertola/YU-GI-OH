@@ -1,139 +1,145 @@
-
-
-.cardDes {   
-    margin-top: 3rem;
-    margin-bottom: 7rem;
-    background-color: rgb(25, 25, 25, 85%);
-    padding: 3rem 2rem 2rem 2rem;
-    margin-left: 3em;
-    margin-right: 3rem;
-    border: 2px solid rgb(152, 155, 157);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-sizing: content-box;
+.mainDescriptionCard {
+  background-image: url("../../public/assets/wallpapertechno\ \(1\).jpeg");
+  padding: 1.5rem 0;
 }
 
-
-.img {
- border: 2px solid red;   
+.cardDes {
+  margin: 0 auto;
+  background-color: #19191981;
+  padding: 4rem 1rem;
+  border: 2px solid rgb(152, 155, 157);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  box-sizing: content-box;
+  max-width: 81vw;
+  max-height: 60vh;
+  margin-bottom: 4rem;
 }
 
+.imageCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 30vw;
+  max-height: 61vh;
+}
+.imgCard {
+  width: 80%;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+/* CARD DETAILS */
 .detailCard {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 65%;
+  margin-left: 1rem;
 }
 
 .block {
-    width: 600px;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 2rem;  
+  width: 100%;
+  max-height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
 }
 
-.name {
-    width: 600px;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-    align-items: flex-end;
-    justify-content: center;
+.nameBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: left;
 }
 
-.font_color {
-    background-color: rgb(60, 60, 58, 85%);
-    padding: 1rem 1rem 1rem 1rem;
-    border-radius: 20px;
-    border: 2px solid rgb(219, 226, 164); 
-    margin-left: 1rem;
+.nameBlock > h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.font_color p {
-    color: rgb(177, 177, 177);
+hr {
+  width: 80%;
+  color: white;
+}
+
+.contentBlock {
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 224, 249);
+  background-color: rgba(5, 31, 226, 0.85);
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contentBlock > p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 .lvl {
-    width: 600px;
-    display: flex;
+  width: 600px;
+  display: flex;
 }
 
 .id {
-    width: 600px;
-    font-size: 10%;
+  width: 600px;
+  font-size: 10%;
 }
 
 /*_________________________________*/
 
-
-.price {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    padding-top: 4rem;
-    border: 2px solid rgb(152, 155, 157);
-    background-color: rgb(25, 25, 25, 85%);
-    border-radius: 10px;
+.priceContainer {
+  /* margin: 0 auto; */
+  /* background-color: #19191981; */
+  /* padding: 1rem 1rem; */
+  /* border: 2px solid rgb(152, 155, 157); */
+  /* border-radius: 10px; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  box-sizing: content-box;
+  max-width: 90vw;
 }
-
-.rarity {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(250, 250, 250, 100%);
-    width: 300px; 
-    height: 250px; 
-    border-radius: 200px; 
-    background-color: rgb(4 19 102);
-    padding-top: 3rem;
-    font-size: 170%;
-}
-
-.rarity p {
-    font-size: 70%;
-}
-
 
 .cost {
-    display: flex;
-    margin-bottom: 5rem;
-    color: rgb(250, 250, 250, 100%);
+  display: flex;
+  color: rgb(250, 250, 250, 100%);
 }
 
 .cost div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    margin-top: -8rem;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 100px;
+  justify-content: center;
+  z-index: O;
 }
 
 .bubble1 {
-    margin-right: 14rem;
-    background-color: rgb(6 93 15);
+  background-color: rgb(6 93 15);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 81vw;
 }
 
 .bubble2 {
-    background-color: rgb(93 6 86)
-}
-
-.price button {
-    background-color: rgb(180, 40, 36);
-    color: rgb(255, 255, 255);
-    padding: 1rem 5rem 1rem 5rem;
-    margin-bottom: 3rem;
-    font-size: 100%;
+  background-color: rgb(93 6 86);
 }
 
 .fin {
-    width: 850px;
-    margin-bottom: 4rem;
-    color: rgb(152, 155, 157, 85%);
-    font-size: 400%;
+  width: 850px;
+  margin-bottom: 4rem;
+  color: rgb(152, 155, 157, 85%);
+  font-size: 400%;
 }

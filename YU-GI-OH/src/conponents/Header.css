@@ -12,13 +12,6 @@ header {
   width: 32rem;
 }
 
-.menu_button {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: rgb(217, 217, 217, 100%);
-  text-decoration: none;
-}
-
 .heroContainer {
   display: flex;
   height: 35rem;

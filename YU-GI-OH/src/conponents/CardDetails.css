@@ -1,4 +1,4 @@
-.cardDetailsContainer {
+/* .cardDetailsContainer {
   background-color: rgba(25, 25, 25, 0.85);
   width: 90%;
   height: 16.5rem;
@@ -27,8 +27,7 @@
   justify-content: flex-end;
 }
 
-.infoContainer h1 {
-  font-family: "DavidLibre-Medium";
+.infoContainer > h1 {
   font-size: 2rem;
   text-align: right;
   color: white;
@@ -58,4 +57,4 @@ hr {
 
 .item article {
   text-align: right;
-}
+} */
