@@ -16,9 +16,9 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   text-align: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
   cursor: pointer;
-  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
 }
 
 .button-49:after {

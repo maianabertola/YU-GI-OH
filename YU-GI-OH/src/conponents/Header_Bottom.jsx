@@ -9,7 +9,12 @@ function Header_Bottom({ theFunction }) {
       <div className="heroContainer">
         <div className="heroDiscover">
           <h1>Welcome Duelist</h1>
-          <p>It's time to Du-du-duel!</p>
+          <div className="paragraphHeroContainer">
+            <p className="heroParagraph">
+              Explore an extensive collection of Duel Monsters cards like never
+              before{" "}
+            </p>
+          </div>
           <ButtonHero cta={"Discover"} theFunction={theFunction}></ButtonHero>
         </div>
       </div>

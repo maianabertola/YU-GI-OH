@@ -28,14 +28,19 @@ function Callout({ title, text, cta, img, color, url }) {
   }
 
   return (
-    <div className="callout" style={myStyle}>
+    // <div className="callOutContainer">
+    <div className="callOutContainer" style={myStyle}>
       <div className="textContainer">
         <h2>{title}</h2>
         <p>{text}</p>
         <Button cta={cta} onClick={url}></Button>
       </div>
-      <img src={img} />
+
+      <div className="imgCallOutContainer">
+        <img className="imgCallOut" src={img} />
+      </div>
     </div>
+    // </div>
   );
 }
 

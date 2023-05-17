@@ -49,7 +49,7 @@ function All_Cards() {
           <input
             type="search"
             className="find"
-            placeholder="search"
+            placeholder="Type your search"
             required
             value={searchCard}
             onChange={(event) => {
