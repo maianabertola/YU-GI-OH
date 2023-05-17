@@ -95,7 +95,7 @@ function DescriptionCard() {
               <div className="cost">
                 <div className="bubble1">
                   <p style={{ fontSize: 30 }}>
-                    {card.card_prices[0].ebay_price}
+                    {card.card_prices && card.card_prices[0].ebay_price}
                   </p>
                   <h4>Ebay price</h4>
                 </div>
@@ -104,7 +104,7 @@ function DescriptionCard() {
                 onClick={() => {
                   window.location.href = "https://www.ebay.fr/";
                 }}
-                cta={card.card_prices[0].ebay_price > 5 ? "Yes" : "Nope"}
+                cta={card.card_prices && card.card_prices[0].ebay_price > 5 ? "Yes" : "Nope"}
               ></Button>
             </div>
 
@@ -112,7 +112,7 @@ function DescriptionCard() {
               <div className="cost">
                 <div className="bubble2">
                   <p style={{ fontSize: 30 }}>
-                    {card.card_prices[0].amazon_price}
+                    {card.card_prices && card.card_prices[0].amazon_price}
                   </p>
                   <h4>Amazon price</h4>
                 </div>
@@ -121,7 +121,7 @@ function DescriptionCard() {
                 onClick={() => {
                   window.location.href = "https://www.amazon.fr/";
                 }}
-                cta={card.card_prices[0].amazon_price > 5 ? "Yes" : "Nope"}
+                cta={card.card_prices && card.card_prices[0].amazon_price > 5 ? "Yes" : "Nope"}
               ></Button>
             </div>
           </div>

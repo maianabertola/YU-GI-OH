@@ -16,7 +16,7 @@ import DescriptionCard from "./pages/DescriptionCard";
 import Oopsies from "./pages/Oopsies";
 import { Route, Routes } from "react-router-dom";
 import QuestionImage from "./pages/QuestionImage";
-import ConfirmationForm from "./conponents/ConfirmationForm";
+import ConfirmationForm from "./pages/ConfirmationForm";
 import QuestionType from "./pages/QuestionType";
 import QuestionLevel from "./pages/QuestionLevel";
 
