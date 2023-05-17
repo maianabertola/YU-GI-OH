@@ -1,15 +1,16 @@
 import React from "react";
 import "./Header.css";
-import Button from "./Button";
+import ButtonHero from "./ButtonHero";
 
-function Header_Bottom() {
+function Header_Bottom({ theFunction }) {
+  console.log(theFunction);
   return (
     <>
       <div className="heroContainer">
         <div className="heroDiscover">
           <h1>Welcome Duelist</h1>
           <p>It's time to Du-du-duel!</p>
-          <Button cta={"Discover"}></Button>
+          <ButtonHero cta={"Discover"} theFunction={theFunction}></ButtonHero>
         </div>
       </div>
     </>

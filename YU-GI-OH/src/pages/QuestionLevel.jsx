@@ -4,31 +4,30 @@ import Button from "../conponents/Button";
 import "../conponents/Form.css";
 import dragonRed from "../assets/dragon_red.jpeg";
 
-function QuestionRace() {
-  const {
-    race: [race, setRace, handleRace],
-  } = useOutletContext();
+function QuestionLevel() {
+    const {
+        level: [level, setLevel, handleLevel],
+    } = useOutletContext();
 
   return (
     <>
-      <div className="bigContainer">
         <div className="formContainer">
           <div className="imageContainer">
-            <img src={dragonRed} alt="red dragon" className="imgForm"></img>
+            <img src={dragonRed} alt="red dragon" className="imgForm" />
           </div>
-          <div className="textFormContainer">
+          <div className="questionFormContainer">
             <div className="inputContainer">
-              <label htmlFor="name">Choose its race</label>
+              <label htmlFor="name">Choose its level</label>
               <hr></hr>
               <input
                 className="inputForm"
-                type="text"
-                id="race"
-                value={race}
-                onChange={(event) => setRace(event.target.value)}
+                type="number"
+                id="level"
+                value={level}
+                onChange={(event) => setLevel(event.target.value)}
               />
-              {race !== "" ? (
-                <Button onClick={handleRace} cta={"Next"}></Button>
+              {level !== "" ? (
+                <Button onClick={handleLevel} cta={"Next"}></Button>
               ) : (
                 <div className="" style={{ textAlign: "right", width: 380 }}>
                   Are you able to read this? If so, it indicates that you need
@@ -38,9 +37,8 @@ function QuestionRace() {
             </div>
           </div>
         </div>
-      </div>
     </>
-  );
+);
 }
 
-export default QuestionRace;
+export default QuestionLevel;

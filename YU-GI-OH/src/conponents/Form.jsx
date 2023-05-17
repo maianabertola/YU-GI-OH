@@ -7,16 +7,16 @@ import Button from "./Button";
 
 function Form() {
   const [name, setName] = useState("");
+  const [level, setLevel] = useState(0);
   const [attribute, setAttribute] = useState("");
   const [race, setRace] = useState("");
   const [attack, setAttack] = useState(0);
   const [defense, setDefense] = useState(0);
+  const [type, setType] = useState("")
   const [description, setDescription] = useState("");
   const [imageForm, setImageForm] = useState("");
   const [show, setShow] = useState(true);
   const navigate = useNavigate();
-
-  console.log(imageForm);
 
   function changePage(event) {
     event.preventDefault();
@@ -25,6 +25,10 @@ function Form() {
   }
 
   function handleName() {
+    navigate("level");
+  }
+
+  function handleLevel() {
     navigate("race");
   }
 
@@ -41,7 +45,11 @@ function Form() {
   }
 
   function handleDefense() {
-    navigate("description");
+    navigate("type");
+  }
+
+  function handleType() {
+    navigate("description")
   }
 
   function handleDescription() {
@@ -49,18 +57,21 @@ function Form() {
   }
 
   async function handleSubmit(event) {
-    console.log("toti");
+    // console.log("toti");
     event.preventDefault();
     try {
       const response = await axios.post(
         "https://ironrest.fly.dev/api/yu-gi-oh",
         {
           name: name,
+          level: level,
           attribute: attribute,
+          race: race,
           atk: attack,
           def: defense,
+          type: type,
           desc: description,
-          picture: imageForm.image_url,
+          card_images: [{image_url: imageForm}],
         }
       );
       console.log("response", response);
@@ -69,7 +80,6 @@ function Form() {
       console.log("BUG DATA:", error);
     }
   }
-
   if (show) {
     return (
       <>
@@ -98,10 +108,12 @@ function Form() {
     <Outlet
       context={{
         name: [name, setName, handleName],
+        level: [level, setLevel, handleLevel],
         attribute: [attribute, setAttribute, handleAttribute],
         race: [race, setRace, handleRace],
         attack: [attack, setAttack, handleAttack],
         defense: [defense, setDefense, handleDefense],
+        type: [type, setType, handleType],
         description: [description, setDescription, handleDescription],
         image: [imageForm, setImageForm, handleSubmit],
       }}
