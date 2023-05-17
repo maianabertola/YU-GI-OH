@@ -1,6 +1,10 @@
 import React from "react";
 import Should_you_buy from "../conponents/Should_you_buy";
 import "../pages/About.css";
+import image0 from "../../public/assets/image20.png"
+import image1 from "../../public/assets/image21.png"
+import image2 from "../../public/assets/image22.png"
+import image3 from "../../public/assets/image23.png"
 function About() {
   return (
     <>
@@ -9,7 +13,7 @@ function About() {
           <div className="left_page">
             <h1>YU-GI-OH</h1>
             <img
-              src="../public/assets/image20.png"
+              src={image0}
               className="img20"
               alt="image de yugi"
             ></img>
@@ -21,7 +25,7 @@ function About() {
               </p>
             </div>
             <img
-              src="../public/assets/image 22.png"
+              src={image2}
               className="img22"
               alt="image de godzilla"
             ></img>
@@ -44,12 +48,12 @@ function About() {
             </div>
             <div className="images">
               <img
-                src="../public/assets/image21.png"
+                src={image1}
                 className="image21"
                 alt="image_de_dragon"
               ></img>
               <img
-                src="../public/assets/image23.png"
+                src={image3}
                 className="image23"
                 alt="image_de_dragon"
               ></img>
