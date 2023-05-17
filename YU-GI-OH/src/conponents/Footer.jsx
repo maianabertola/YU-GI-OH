@@ -62,7 +62,6 @@ function Footer() {
             ></SocialIcon>
           </div>
         </div>
-
         <div className="text_footer">
           <strong className="strong_footer">Looking for a card?</strong>
           <Link to="/all-cards" className="linkFooter">

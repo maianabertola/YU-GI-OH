@@ -9,6 +9,16 @@ function QuestionImage() {
     image: [imageForm, setImageForm, handleSubmit],
   } = useOutletContext();
 
+  function handleChange(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function () {
+      console.log(reader.result);
+      setImageForm(reader.result);
+    };
+  }
+
   return (
     <>
       <div>
@@ -23,13 +33,14 @@ function QuestionImage() {
                 The last question, what will your monster look like?
               </label>
               <hr></hr>
+              {/* <img src={imageForm} width={100} alt="" /> */}
               <input
                 className="inputForm"
                 type="file"
                 id="imageForm"
                 accept="image/png"
                 // value={imageForm}
-                onChange={(event) => setImageForm(event.target.value)}
+                onChange={handleChange}
               />
               {imageForm !== "" ? (
                 <Button

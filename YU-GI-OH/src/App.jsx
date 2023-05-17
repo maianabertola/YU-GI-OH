@@ -16,7 +16,11 @@ import DescriptionCard from "./pages/DescriptionCard";
 import Oopsies from "./pages/Oopsies";
 import { Route, Routes } from "react-router-dom";
 import QuestionImage from "./pages/QuestionImage";
-import ConfirmationForm from "./pages/ConfirmationForm";
+import ConfirmationForm from "./conponents/ConfirmationForm";
+import QuestionType from "./pages/QuestionType";
+import QuestionLevel from "./pages/QuestionLevel";
+
+
 function App() {
   return (
     <>
@@ -27,10 +31,12 @@ function App() {
           <Route path="/all-cards/:id" element={<DescriptionCard />} />
           <Route path="/create-card" element={<FormPage />}>
             <Route path="name" element={<QuestionName />} />
+            <Route path="level" element={<QuestionLevel />} />
             <Route path="attribute" element={<QuestionAttribute />} />
             <Route path="race" element={<QuestionRace />} />
             <Route path="attack" element={<QuestionAttack />} />
             <Route path="defense" element={<QuestionDefense />} />
+            <Route path="type" element={<QuestionType />} />
             <Route path="description" element={<QuestionDescription />} />
             <Route path="image-monster" element={<QuestionImage />} />
             <Route

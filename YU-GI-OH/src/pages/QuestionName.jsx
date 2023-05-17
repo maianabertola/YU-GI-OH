@@ -1,7 +1,6 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
 import astroSorcerer from "../assets/astro_sorcerer.jpeg";
-import { Link, Navigate, useNavigate } from "react-router-dom";
 import Button from "../conponents/Button";
 import "../conponents/Form.css";
 
@@ -10,19 +9,13 @@ function QuestionName() {
     name: [name, setName, handleName],
   } = useOutletContext();
 
-  // console.log("ICI", name);
   return (
     <>
-      <div>
+      <div className="bigContainer">
         <div className="formContainer">
           <div className="imageContainer">
-            <img
-              src={astroSorcerer}
-              alt="astro sorcerer"
-              className="imgForm"
-            ></img>
+            <img src={astroSorcerer} alt="astro sorcerer" className="imgForm" />
           </div>
-
           <div className="questionFormContainer">
             <div className="inputContainer">
               <label htmlFor="name">What's the name of your monster?</label>
@@ -32,7 +25,6 @@ function QuestionName() {
                 type="text"
                 id="name"
                 value={name}
-                // onInput={onInput}
                 onChange={(event) => setName(event.target.value)}
               />
               {name !== "" ? (

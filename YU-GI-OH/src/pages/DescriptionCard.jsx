@@ -163,7 +163,6 @@ function DescriptionCard() {
               </div>
             </div>
           </div>
-
           <h2>Is it a better investment compared to an NFT?</h2>
           <div className="priceContainer">
             <div className="ebayContainer">
