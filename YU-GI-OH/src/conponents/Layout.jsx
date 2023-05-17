@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import FormPage from "../pages/FormPage";
 import "../App.css";
+import logo from "../../public/assets/Logo.png";
 
 function Layout() {
   return (
@@ -11,7 +12,7 @@ function Layout() {
       <header>
         <Link to="/">
           <div className="containerLogo">
-            <img src="../../public/assets/Logo.png" className="logo_menu" />
+            <img src={logo} className="logo_menu" />
           </div>
         </Link>
         <nav className="menu_header">
