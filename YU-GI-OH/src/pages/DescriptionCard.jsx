@@ -25,19 +25,17 @@ function DescriptionCard() {
   if (!card) {
     return <div>wait</div>;
   }
-  
+
   if (
     card.type === "Normal Monster" ||
     card.type === "Flip Effect Monster" ||
     card.type === "Effect Monster" ||
     card.type === "Union Effect Monster"
-    ) {
-      if(card.card_sets === []) {
-        return (
-          <div>wait</div>
-          )
-        }
-        console.log(card.card_sets)
+  ) {
+    if (card.card_sets === []) {
+      return <div>wait</div>;
+    }
+    console.log(card.card_sets);
     return (
       <>
         <div key={param.id} className="cardDes">
@@ -89,11 +87,11 @@ function DescriptionCard() {
           <div className="cost">
             <div className="bubble1">
               <h2>ebay_price</h2>
-              <p>{card.card_prices[0].ebay_price}</p>
+              <p>{card.card_prices && card.card_prices[0].ebay_price}</p>
             </div>
             <div className="bubble2">
               <h2>amazon_price</h2>
-              <p>{card.card_prices[0].amazon_price}</p>
+              <p>{card.card_prices && card.card_prices[0].amazon_price}</p>
             </div>
           </div>
           <p className="fin">
@@ -132,16 +130,16 @@ function DescriptionCard() {
         <div className="price">
           <div className="rarity">
             <p>rarity</p>
-            <h2>{card.card_sets[0].set_rarity}</h2>
+            <h2>{card.card_sets && card.card_sets[0].set_rarity}</h2>
           </div>
           <div className="cost">
             <div className="bubble1">
               <h2>ebay_price</h2>
-              <p>{card.card_prices[0].ebay_price}</p>
+              <p>{card.card_sets && card.card_prices[0].ebay_price}</p>
             </div>
             <div className="bubble2">
               <h2>amazon_price</h2>
-              <p>{card.card_prices[0].amazon_price}</p>
+              <p>{card.card_sets && card.card_prices[0].amazon_price}</p>
             </div>
           </div>
           <p className="fin">
