@@ -13,7 +13,6 @@ function Home_Page() {
 
   function scrollToSection() {
     callOut.current.scrollIntoView();
-    console.log(callOut.current);
   }
 
   function navToAllCards(event) {
@@ -26,7 +25,7 @@ function Home_Page() {
     navigate("create-card");
   }
 
-  function navToAbout() {
+  function navToAbout(event) {
     event.preventDefault();
     navigate("about");
   }
