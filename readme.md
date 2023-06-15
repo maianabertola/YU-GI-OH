@@ -51,7 +51,7 @@ Scroll down to a specific section of the page
 
 Used Outlet and lifted the UseState to create Yu-Gi-Oh card
 
-````
+```
 function Form() {
   const [name, setName] = useState("");
   const [level, setLevel] = useState(0);
@@ -167,7 +167,8 @@ function Form() {
     />
   );
 }
-    ```
+```
+
 
 
 ## Mistakes
@@ -190,4 +191,4 @@ To run this project locally, follow these steps:
 - Axios: Promise-based HTTP client for making API requests.
 
 Feel free to explore and enjoy the Yu-Gi-Oh project website!"
-````
+
